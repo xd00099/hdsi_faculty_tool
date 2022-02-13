@@ -4,12 +4,25 @@ You can use the [editor on GitHub](https://github.com/MarthaY01/hdsi_faculty_too
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Our Goal 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Data Collection
 
-```markdown
-Syntax highlighted code block
+### Abstracts as Data
+
+### Latent Dirichlet Allocation (LDA)
+
+
+### Topic Labelling
+
+### Our Final Dashboard
+
+### Easy Search Tool
+
+
+### Future Uses 
+
+
 
 # Header 1
 ## Header 2
