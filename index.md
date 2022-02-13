@@ -1,7 +1,6 @@
 # Capstone Project - Section A14
 
-<button onclick="location.href='https://docs.google.com/document/d/1u6r-X8ZCbjC8UuSJau-DIbpBevjOWTVSEwI4qaLCmlI/edit?usp=sharing">
-         See our Report</button>
+<a href="https://docs.google.com/document/d/1u6r-X8ZCbjC8UuSJau-DIbpBevjOWTVSEwI4qaLCmlI/edit?usp=sharing">See our Report</a>
 
 Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang
 
