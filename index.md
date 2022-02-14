@@ -28,7 +28,7 @@ Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang
 ## Easy Search Tool
 <em> Here we will talk about the Front End Element of our project, and how it is easy to use for any audience, specially those who might not be familiar with the Sankedy </em>
 
-## Maintaning a Workflow and Future Use
+## Maintaining a Workflow and Future Use
 <em> Here we will talk about how the code was changed in order to be upkept easily, and how addition or deletion of faculty will be easy and can be done once a year. We will also mention the reason of this (faculty publishes every year). 
 
 
