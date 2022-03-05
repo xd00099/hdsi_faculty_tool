@@ -1,4 +1,6 @@
-# Capstone Project - Section A14
+# HDSI Faculty Exploration Tool
+
+Capstone Project - Section A14
 
 Team Members: Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang
 
