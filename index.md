@@ -1,7 +1,5 @@
 # HDSI Faculty Exploration Tool
 
-Capstone Project - Section A14
-
 Team Members: Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang
 
 <a href="https://docs.google.com/document/d/1u6r-X8ZCbjC8UuSJau-DIbpBevjOWTVSEwI4qaLCmlI/edit?usp=sharing">See our Report</a>
@@ -17,7 +15,11 @@ The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institut
  
 
 ## Data Collection
-<em> Here we will talk about Dimensions, Google Scholars and how we used the manually filled out CSV to get our abstracts </em> 
+
+In order to obtain abstracts from HDSI faculty's publications, we used <a href = 'https://datanexus.ucsd.edu/analytic-data/dimensions.html'> Dimensions'</a> API. This website contains publications and academic journal articles and with their API we were able to obtain HDSI faculty researcher profiles.
+
+We then obtained all of the abstracts available from these authors. For additional information not found in Dimensions, we utilized Google Scholar profiles. We complemented our data from both of these sites.
+
 
 ## Abstracts as Data
 We considered the use of abstracts as our main source of data since in scientific papers and publications, abstracts are a short summary of a completed research. After further exploration and topic modeling, we discovered that they are indeed representative of the author's general field.
