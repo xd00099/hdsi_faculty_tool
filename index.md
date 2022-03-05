@@ -2,12 +2,13 @@
 
 <a href="https://docs.google.com/document/d/1u6r-X8ZCbjC8UuSJau-DIbpBevjOWTVSEwI4qaLCmlI/edit?usp=sharing">See our Report</a>
 
-Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang
+Team Members: Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang
 
 
 
 ## Our Goal 
-<em> Here we will write the motivation of our project, basically a portion of the introduction of our project report. </em> 
+<em> The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institute (HDSI)</a> at University of California, San Diego is dedicated to the discovery of new methods and training of students and faculty to use data science to solve problems in the current world. The HDSI has several industry partners that are often searching for assistance to tackle their daily activities and need experts in different domain areas. Currently, there are around 55 professors affiliated to HDSI. They all have diverse research interests and have written numerous papers in their own fields. Our goal was to create a tool that allows HDSI to select the best fit from their faculty, based on their published work, to aid their industry partners in their specific endeavors. We did this with Natural Language Processing (NLP) by managing all the abstracts from the faculty’s published work and organizing them by topics. We will then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job.
+ </em> 
 
 ## Data Collection
 <em> Here we will talk about Dimensions, Google Scholars and how we used the manually filled out CSV to get our abstracts </em> 
