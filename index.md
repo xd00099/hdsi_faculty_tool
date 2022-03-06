@@ -11,14 +11,26 @@ Team Members: Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang
 
 
 ## Our Goal 
-The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institute (HDSI)</a> at University of California, San Diego is dedicated to the discovery of new methods and training of students and faculty to use data science to solve problems in the current world. The HDSI has several industry partners that are often searching for assistance to tackle their daily activities and need experts in different domain areas. Currently, there are around 55 professors affiliated to HDSI. They all have diverse research interests and have written numerous papers in their own fields. Our goal was to create a tool that allows HDSI to select the best fit from their faculty, based on their published work, to aid their industry partners in their specific endeavors. We did this with Natural Language Processing (NLP) by managing all the abstracts from the faculty’s published work and organizing them by topics. We will then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job.
+The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institute (HDSI)</a> at University of California, San Diego is dedicated to the discovery of new methods and training of students and faculty to use data science to solve problems in the current world. The HDSI has several industry partners that are often searching for assistance to tackle their daily activities and need experts in different domain areas. Currently, there are around 55 professors affiliated to HDSI. They all have diverse research interests and have written numerous papers in their own fields. 
+
+Our goal was to create a tool that allows HDSI to select the best fit from their faculty, based on their published work, to aid their industry partners in their specific endeavors. We did this with Natural Language Processing (NLP) by managing all the abstracts from the faculty’s published work and organizing them by topics. We will then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job.
  
+ 
+## Our Dashboard
+<em> Here we will include how the version 1.0 of the Sankey looked, with no labels and no color coding </em>
 
 ## Data Collection
 
 In order to obtain abstracts from HDSI faculty's publications, we used <a href = 'https://datanexus.ucsd.edu/analytic-data/dimensions.html'> Dimensions'</a> API. This website contains publications and academic journal articles and with their API we were able to obtain HDSI faculty researcher profiles.
 
-We then obtained all of the abstracts available from these authors. For additional information not found in Dimensions, we utilized Google Scholar profiles. We complemented our data from both of these sites.
+We then obtained all of the abstracts available from these authors. For additional information not found on Dimensions, we utilized Google Scholar profiles. We complemented the data with both of these sites.
+
+In our dashboard, you are able to select a particular author and if their Google Scholar profile has labels for their Field or Concentration, these will be displayed as shown on the image below. This makes it easier for the user to be more familiar with the author's work. 
+
+<img width="707" alt="Google Scholar Labels on Dashboard" src="https://user-images.githubusercontent.com/59885990/156911881-2c0b967f-d0a0-4e33-987a-624a6ac0befc.png">
+
+
+
 
 
 ## Abstracts as Data
@@ -31,8 +43,7 @@ It is important to mention that even though researchers might not use the exact 
 <em> Here we will talk about Topic Modelling and LDA </em>
 
 
-## Our Dashboard
-<em> Here we will include how the version 1.0 of the Sankey looked, with no labels and no color coding </em>
+
 
 
 ## Topic Labelling
