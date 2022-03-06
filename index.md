@@ -27,7 +27,7 @@ Once you are able to get the address for the dashboard and copy and paste it on 
 
 This dashboard includes a Sankey Diagram, a number of topics selection bars, and 3 different search bars on the right for topic number and topic words, researcher and keywords.
 
-The topics were obtained using a  <a href="#Latent Dirichlet Allocation (LDA)"> Latent Dirichlet Allocation (LDA) id </a> topic model. 
+The topics were obtained using a  <a href="#Latent Dirichlet Allocation (LDA)"> Latent Dirichlet Allocation (LDA) </a> topic model. 
 
 
 
