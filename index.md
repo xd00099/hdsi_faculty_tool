@@ -61,6 +61,7 @@ It is important to mention that even though researchers might not use the exact 
 ## Topic Labelling
 <em> Here we will discuss how in order to improve our product, we obtained labels from Google Scholar and Dimensions to categorize articles and faculty, but how we still kept the topic words in order to be more exact with the topic distinction </em>
 
+Latent Dirichlet Allocation (LDA) was used for our topic modeling. The LDA model can be represented by a graphical probabilistic model with three levels as shown in the following figure. The inner level represents the word level: **w** denotes a specific word in a particular document, while **z** denotes the specific topic sampled for that particular word. At the document level, **Θ** represents the topic distribution for a particular document. At the outer corpus level, **α** and **β** represents the document topic density and the word topic density, respectively.  LDA uses a generative probabilistic approach to model each topic as a mixture of a set of words and each document as a mixture of a set of topics.
 
 ## Maintaining a Workflow
 <em> Here we will talk about how the code was changed in order to be upkept easily, and how addition or deletion of faculty will be easy and can be done once a year. We will also mention the reason of this (faculty publishes every year).  </em>
