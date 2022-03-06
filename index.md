@@ -67,7 +67,10 @@ It is important to mention that even though researchers might not use the exact 
 
 
 ## Easy Search Tool and Future Work
-<em> Here we will talk about the Front End Element of our project, and how it is easy to use for any audience, specially those who might not be familiar with the Sankedy </em>
+<em> Here we will talk about the Front End Element of our project, and how it is easy to use for any audience, specially those who might not be familiar with the Sankedy 
+
+ While our dashboard has many useful functions that can offer great use cases for our Industry partners, we also wanted to imagine how we could integrate a more UI focused easy search tool on the HDSI website. So we created a Figma demo demonstrating the features that we are further interested in exploring.
+</em>
 
 
 
