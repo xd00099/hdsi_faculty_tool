@@ -27,7 +27,7 @@ We then obtained all of the abstracts available from these authors. For addition
 
 In our dashboard, you are able to select a particular author and if their Google Scholar profile has labels for their Field or Concentration, these will be displayed as shown on the image below. This makes it easier for the user to be more familiar with the author's work. 
 
-<img width="707" alt="Google Scholar Labels on Dashboard" src="https://user-images.githubusercontent.com/59885990/156911881-2c0b967f-d0a0-4e33-987a-624a6ac0befc.png">
+<img width="707" alt="Google Scholar Labels on Dashboard" src="https://user-images.githubusercontent.com/59885990/156911881-2c0b967f-d0a0-4e33-987a-624a6ac0befc.png" class='center'>
 
 
 
