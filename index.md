@@ -23,7 +23,7 @@ We have created a tool that allows for future users to explore faculty's work in
 
 Once you are able to get the address for the dashboard and copy and paste it on your browser, you should see something like the following:
 
-<img width="1435" alt="Preview of Dashboard" src="https://user-images.githubusercontent.com/59885990/156912052-04413cd4-b54c-40a9-a893-cc779ad409ed.png">
+<img width="1435" alt="Preview of Dashboard" src="image.png">
 
 This dashboard includes a Sankey Diagram, a number of topics selection bars, and 3 different search bars on the right for topic number and topic words, researcher and keywords.
 
