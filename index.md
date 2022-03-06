@@ -61,7 +61,7 @@ It is important to mention that even though researchers might not use the exact 
 
 Latent Dirichlet Allocation (LDA) was used for our topic modeling. The LDA model can be represented by a graphical probabilistic model with three levels as shown in the following figure. The inner level represents the word level: **w** denotes a specific word in a particular document, while **z** denotes the specific topic sampled for that particular word. At the document level, **Θ** represents the topic distribution for a particular document. At the outer corpus level, **α** and **β** represents the document topic density and the word topic density, respectively.  LDA uses a generative probabilistic approach to model each topic as a mixture of a set of words and each document as a mixture of a set of topics.
 
-![LDA](/images/LDA.png)
+![LDA](images/LDA.png)
 
 Behind the scene, the LDA model takes the corpus of texts with the id2word indexes and transform them into document topic density matrix and word topic density matrix by repetitive probabilistic sampling. The document topic density matrix contains the $D$ number of documents as rows, and $K$ number of topics as columns. Each row represents the particular probability distribution over the generated topics for that particular document/article. The word topic density matrix contains $V$ rows of unique words, and $K$ as the number of columns. Then, each row of the matrix represents a probability distribution of topics for a particular word. With the two matrices, we are able to generate a list of top terms for each topic ranked by the probability distribution. And also we could extract the dominant topics for each terms by the measures in the document topic density matrix. 
 
