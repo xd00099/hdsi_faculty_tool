@@ -52,12 +52,8 @@ It is important to mention that even though researchers might not use the exact 
 
   
 ## <a id="Latent Dirichlet Allocation (LDA)">Latent Dirichlet Allocation (LDA)</a>
-<em> Topic modeling provides methods for automatically organizing, understanding, searching, and summarizing large text corpora.</em>
 
-
-
-## Topic Labelling
-<em> Here we will discuss how in order to improve our product, we obtained labels from Google Scholar and Dimensions to categorize articles and faculty, but how we still kept the topic words in order to be more exact with the topic distinction </em>
+Topic modeling provides methods for automatically organizing, understanding, searching, and summarizing large text corpora.
 
 Latent Dirichlet Allocation (LDA) was used for our topic modeling. The LDA model can be represented by a graphical probabilistic model with three levels as shown in the following figure. The inner level represents the word level: **w** denotes a specific word in a particular document, while **z** denotes the specific topic sampled for that particular word. At the document level, **Θ** represents the topic distribution for a particular document. At the outer corpus level, **α** and **β** represents the document topic density and the word topic density, respectively.  LDA uses a generative probabilistic approach to model each topic as a mixture of a set of words and each document as a mixture of a set of topics.
 
@@ -68,6 +64,12 @@ Behind the scene, the LDA model takes the corpus of texts with the id2word index
 As a result, by running the LDA model, we will be able to obtain several matrices: the word-topic matrix which represents each word with its associated topic distribution, the document-topic matrix which represents each document with its corresponding probability score, the author-topic matrix which aggregates from the document-topic matrices by the authors and the author-year-topic matrix which is obtained by aggregate further from author-topic matrix by year.
 
 The difficulty lies in the choice of **K**, the number of generated topics. Because this is a unsupervised machine learning method, it requires human interpretation to account for the qualities of generated topics. We will be choosing the topics by running different **Ks** individually and compare results together.
+
+
+## Topic Labelling
+<em> Here we will discuss how in order to improve our product, we obtained labels from Google Scholar and Dimensions to categorize articles and faculty, but how we still kept the topic words in order to be more exact with the topic distinction </em>
+
+
 
 ## Maintaining a Workflow
 <em> Here we will talk about how the code was changed in order to be upkept easily, and how addition or deletion of faculty will be easy and can be done once a year. We will also mention the reason of this (faculty publishes every year).  </em>
