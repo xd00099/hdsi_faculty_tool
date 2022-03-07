@@ -1,0 +1,10 @@
+{
+    "corpus_path": "test/testdata/output/all_docs_aggby_author_year.pickle",
+    "authors_path": "test/testdata/output/all_authors.pickle",
+    "k": 30,
+    "model_output_path": "test/testdata/saved_results/model/model_lda_k=30.pickle",
+    "dominant_topic_output": "test/testdata/saved_results/topic_results/dominant_topic_k=30.csv",
+    "time_author_topic_output": "test/testdata/saved_results/topic_results/time_author_topic_k=30.csv",
+    "missing_author_year_path": "test/testdata/output/missing_author_years.pickle",
+    "author_topic_output": "test/testdata/saved_results/topic_results/author_topic_k=30.csv"
+}

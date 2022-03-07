@@ -1,0 +1,12 @@
+{
+    "data_processed_path": "test/testdata/output/processed_data.csv",
+    "data_raw_path": "test/testdata/raw/test_data.csv",
+    "corpus_path": "test/testdata/output/all_docs_aggby_author_year.pickle",
+    "missing_author_years_path": "test/testdata/output/missing_author_years.pickle",
+    "authors_path": "test/testdata/output/all_authors.pickle",
+    "models_path": "test/testdata/saved_results/model/k_5_10_15_20_30_models.pickle",
+    "results_path": "test/testdata/saved_results/model/k_5_10_15_20_30_results.pickle",
+    "sankey_output_folder": "test/testdata/sankey_dash/",
+    "num_topics_list": [5,10,15,20,30]
+    
+}

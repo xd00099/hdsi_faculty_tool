@@ -1,0 +1,7 @@
+{
+    "data_path": "test/testdata/raw/test_data.csv",
+    "output_path_corpus": "test/testdata/output/all_docs_aggby_author_year.pickle",
+    "output_path_authors": "test/testdata/output/all_authors.pickle",
+    "output_path_missing_author_years": "test/testdata/output/missing_author_years.pickle",
+    "output_processed_data_path": "test/testdata/output/processed_data.csv"
+}

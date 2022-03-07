@@ -1,0 +1,12 @@
+{
+    "data_processed_path": "data/output/processed_data.csv",
+    "data_raw_path": "data/raw/final_hdsi_faculty.csv",
+    "corpus_path": "data/output/all_docs_aggby_author_year.pickle",
+    "missing_author_years_path": "data/output/missing_author_years.pickle",
+    "authors_path": "data/output/all_authors.pickle",
+    "models_path": "data/saved_results/model/k_5_10_15_20_30_models.pickle",
+    "results_path": "data/saved_results/model/k_5_10_15_20_30_results.pickle",
+    "labels_path": "data/output/topic_labels.pickle",
+    "sankey_output_folder": "data/sankey_dash/",
+    "num_topics_list": [5,10,15,20,30]
+}

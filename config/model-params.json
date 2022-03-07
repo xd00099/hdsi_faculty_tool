@@ -1,0 +1,10 @@
+{
+    "corpus_path": "data/output/all_docs_aggby_author_year.pickle",
+    "authors_path": "data/output/all_authors.pickle",
+    "k": 5,
+    "model_output_path": "data/saved_results/model/model_lda_k=5.pickle",
+    "category_topic_path": "data/saved_results/topic_results/category_topic_k=5.json",
+    "time_author_topic_output": "data/saved_results/topic_results/time_author_topic_k=5.csv",
+    "missing_author_year_path": "data/output/missing_author_years.pickle",
+    "author_topic_output": "data/saved_results/topic_results/author_topic_k=5.csv"
+}
