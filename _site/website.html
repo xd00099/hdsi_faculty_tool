@@ -63,7 +63,7 @@
                         <a class="btn btn-primary page-scroll" href="https://docs.google.com/document/d/1u6r-X8ZCbjC8UuSJau-DIbpBevjOWTVSEwI4qaLCmlI/edit?usp=sharing">View our Report</a> <a class="btn btn-primary page-scroll" href="https://github.com/MarthaY01/hdsi_faculty_tool">Project Github</a>
                     </div>
                 </div>
-            </div>
+            </dßßßiv>
         </section>
 
         <!-- About -->
@@ -107,6 +107,36 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Methodology</h1>
+                        <br>
+                        <h4 id="LDA" class="LDA-section">Latent Dirichlet Allocation (LDA)</h4>
+                        <p>Topic modeling provides methods for automatically organizing, understanding, searching, and summarizing large text corpora.</p>
+                        <br>
+                        <p>Latent Dirichlet Allocation (LDA) was used for our topic modeling. The LDA model can be represented by a graphical probabilistic model with three levels as shown in the following figure. The inner level represents the word level: **w** denotes a specific word in a particular document, while **z** denotes the specific topic sampled for that particular word. At the document level, **Θ** represents the topic distribution for a particular document. At the outer corpus level, **α** and **β** represents the document topic density and the word topic density, respectively.  LDA uses a generative probabilistic approach to model each topic as a mixture of a set of words and each document as a mixture of a set of topics.</p>
+                        <br>
+                        <p>Behind the scene, the LDA model takes the corpus of texts with the id2word indexes and transform them into document topic density matrix and word topic density matrix by repetitive probabilistic sampling. The document topic density matrix contains the **D** number of documents as rows, and **K** number of topics as columns. Each row represents the particular probability distribution over the generated topics for that particular document/article. The word topic density matrix contains **V** rows of unique words, and **K** as the number of columns. Then, each row of the matrix represents a probability distribution of topics for a particular word. With the two matrices, we are able to generate a list of top terms for each topic ranked by the probability distribution. And also we could extract the dominant topics for each terms by the measures in the document topic density matrix. </p>
+                        <br>
+                        <p>As a result, by running the LDA model, we will be able to obtain several matrices: the word-topic matrix which represents each word with its associated topic distribution, the document-topic matrix which represents each document with its corresponding probability score, the author-topic matrix which aggregates from the document-topic matrices by the authors and the author-year-topic matrix which is obtained by aggregate further from author-topic matrix by year.</p>
+                        <br>
+                        <p>The difficulty lies in the choice of **K**, the number of generated topics. Because this is a unsupervised machine learning method, it requires human interpretation to account for the qualities of generated topics. We will be choosing the topics by running different **Ks** individually and compare results together.</p>
+                        <br>
+                        <h4>Topic Labelling</h4>
+                        <p>We obtained labels from the LDA model, Google Scholar, and Dimensions to categorize articles and faculty.</p>
+                        <br>
+                        <p>- LDA: we used the labels from our trained LDA model to represent our topics. By ranking each word by their topic probabilities, we can get each topic's top relevant words.</p>
+                        <br>
+                        <p>- Google Scholar: we scraped the labels for each researcher from their Google Scholar pages.</p>
+                        <br>
+                        <p>- Dimensions API: we gathered labels from Dimensions API and combined them with the LDA labels to optimize our labels for topics. (each topic gets the most frequent topic labels aggregated on the topic level)</p>
+                        <br>
+                        <h4>Maintaining a Workflow</h4>
+                        <p>As our tool aims to provide the information of faculty members at HDSI to facilitate the partnership with the industry, we hope that this tool can be always stay updated and robust to changes. Therefore, we designed a data pipeline that enables updates for our search tool:</p>
+                        <ul>
+                            <li>Data ETL: This part is done through an API call to the Dimensions database to extract the latest faculty publication data.</li>
+                            <li>Data Preprocess: This is the first part of data pipeline which cleans up the retrieved datasets and preprocess for the later modeling use.</li>
+                            <li>LDA Modeling: The second part of the pipeline is dedicated to the modeling process. Here, developers can modify the configuration to adjust the topic models and explore the topic results.</li>
+                            <li>Prepare Dashboard: Based on the selected models, the pipeline will run the appropriate models and generate the necessary files for the use of dashboard.</li>
+                            <li>Launch Dashboard: Once all the data and files are ready, the dashboard is ready to be launched.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -118,6 +148,22 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Results</h1>
+                        <br>
+                        <p>We have created a tool that allows for future users to explore faculty's work in a very easy and intuitive way. <a href="https://github.com/IreneLiu2018/capstone_a14/tree/master/New_Vis">Our Project GitHub Repo</a> gives detailed instructions on how to run the dashboard.</p>
+                        <br>
+                        <p>Once you are able to get the address for the dashboard and copy and paste it on your browser, you should see something like the following:</p>
+                        <br>
+                        <p>This dashboard includes a Sankey Diagram, a number of topics selection bars, and 3 different search bars on the right for topic number and topic words, researcher and keywords.</p>
+                        <br>
+                        <p>The topics were obtained using a  <a class="page-scroll" href="#LDA"> Latent Dirichlet Allocation (LDA) </a> topic model. </p>
+                        <br>
+                        <p>On the bar on the left, you are able to select the number of topics you wish to see and that were generated by LDA.</p>
+                        <br>
+                        <p>On the Topic number bar, you are able to see the topic number along with its associated top words and the related field labels that we have added.</p>
+                        <br>
+                        <p>You are also able to select a particular researcher and all of their published papers will appear along with the topic number they are related too.</p>
+                        <br>
+                        <p>A word search can also be done and the related topics will show up as well.</p>
                     </div>
                 </div>
             </div>
@@ -140,6 +186,12 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Future Work</h1>
+                        <br>
+                        <p>While our current dashboard has many useful functions that can offer great use cases for our Industry partners, we also wanted to imagine how we could integrate a more UI focused easy search tool on the HDSI website. So we created a <a href="https://www.figma.com/proto/WO5QJnJrALVwI2xu1NfgAg/Main?node-id=28%3A2&starting-point-node-id=28%3A2">Figma demo</a> demonstrating the features that we are further interested in exploring and testing for a broader target audience including those who many not be familiar with more advanced data visualizations like the sankey diagram.</p>
+                        <br>
+                        <p>Thus our faculty exploration tool resembles a search bar like aesthetic that matches the current theme of the HDSI website with modern UI aspects and a navy and gold color scheme. The search bar tool will be helpful to explore the array of topics that each of our HDSI faculty members specializes in from microbiology to machine learning algorithms similar to the search by keyword function within our current dashboard.</p>
+                        <br>
+                        <p>However our concept further extends to how we want our information to be displayed. So by adding profile pictures that coincide with each faculty member’s name, area of research, and their most relevant publications, our goal is to create a more intuitive layout that provides a greater amount of information within a quick glance. In addition, we also imagined a profile style page that expands upon each faculty member’s publications, abstracts, along with their article level topic, and contact information for easy access to the user. While this is still a work in progress, our next steps would be to further build upon the early stages of implementation using Html and RxJs with a future goal of integrating our faculty exploration tool on the HDSI website itself which would allow a wider audience to find suitable faculty members depending on what their specific needs are.</p>
                     </div>
                 </div>
             </div>
@@ -151,6 +203,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>About Us</h1>
+                        <br>
                     </div>
                 </div>
             </div>
