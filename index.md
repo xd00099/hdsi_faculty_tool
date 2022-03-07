@@ -84,11 +84,18 @@ This workflow can be traced in our Github repo, and our goal is to run through t
 
 ## Easy Search Tool and Future Work
 <em> Here we will talk about the Front End Element of our project, and how it is easy to use for any audience, specially those who might not be familiar with the Sankedy 
-
-
-
- While our dashboard has many useful functions that can offer great use cases for our Industry partners, we also wanted to imagine how we could integrate a more UI focused easy search tool on the HDSI website. So we created a Figma demo demonstrating the features that we are further interested in exploring.
 </em>
+
+While our current dashboard has many useful functions that can offer great use cases for our Industry partners, we also wanted to imagine how we could integrate a more UI focused easy search tool on the HDSI website. So we created a <a href="https://www.figma.com/proto/WO5QJnJrALVwI2xu1NfgAg/Main?node-id=28%3A2&starting-point-node-id=28%3A2">Figma demo</a> demonstrating the features that we are further interested in exploring and testing for a broader target audience including those who many not be familiar with more advanced data visualizations like the sankey diagram.
+
+<img width="707" alt="Search Tool" src="images/image.png" class='center'>
+
+Thus our faculty exploration tool resembles a search bar like aesthetic that matches the current theme of the HDSI website with modern UI aspects and a navy and gold color scheme. The search bar tool will be helpful to explore the array of topics that each of our HDSI faculty members specializes in from microbiology to machine learning algorithms similar to the search by keyword function within our current dashboard. 
+
+However our concept further extends to how we want our information to be displayed. So by adding profile pictures that coincide with each faculty member’s name, area of research, and their most relevant publications, our goal is to create a more intuitive layout that provides a greater amount of information within a quick glance. In addition, we also imagined a profile style page that expands upon each faculty member’s publications, abstracts along with their article level topic, and contact information for easy access. 
+
+
+
 
 
 
