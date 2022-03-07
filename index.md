@@ -90,8 +90,7 @@ While our current dashboard has many useful functions that can offer great use c
 
 Thus our faculty exploration tool resembles a search bar like aesthetic that matches the current theme of the HDSI website with modern UI aspects and a navy and gold color scheme. The search bar tool will be helpful to explore the array of topics that each of our HDSI faculty members specializes in from microbiology to machine learning algorithms similar to the search by keyword function within our current dashboard. 
 
-However our concept further extends to how we want our information to be displayed. So by adding profile pictures that coincide with each faculty member’s name, area of research, and their most relevant publications, our goal is to create a more intuitive layout that provides a greater amount of information within a quick glance. In addition, we also imagined a profile style page that expands upon each faculty member’s publications, abstracts along with their article level topic, and contact information for easy access. 
-
+However our concept further extends to how we want our information to be displayed. So by adding profile pictures that coincide with each faculty member’s name, area of research, and their most relevant publications, our goal is to create a more intuitive layout that provides a greater amount of information within a quick glance. In addition, we also imagined a profile style page that expands upon each faculty member’s publications, abstracts, along with their article level topic, and contact information for easy access to the user. While this is still a work in progress, our next steps would be to further build upon the early stages of implementation using Html and RxJs with a future goal of integrating our faculty exploration tool on the HDSI website itself which would allow a wider audience to find suitable faculty members depending on what their specific needs are.
 
 
 
