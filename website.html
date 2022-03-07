@@ -25,28 +25,28 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <li class="hidden">
-                            <a class="page-scroll" href="#page-top"></a>
+                            <a class="page-scroll" href="#page-top" style = "font-size: 15px;"></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#about">About</a>
+                            <a class="page-scroll" href="#about" style = "font-size: 20px;">About</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#data">Data</a>
+                            <a class="page-scroll" href="#data" style = "font-size: 20px;">Data</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#methodology">Methodology</a>
+                            <a class="page-scroll" href="#methodology" style = "font-size: 20px;">Methodology</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#results">Results</a>
+                            <a class="page-scroll" href="#results" style = "font-size: 20px;">Results</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#demo">Demo</a>
+                            <a class="page-scroll" href="#demo" style = "font-size: 20px;">Demo</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#futurework">Future Work</a>
+                            <a class="page-scroll" href="#futurework" style = "font-size: 20px;">Future Work</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#aboutus">About Us</a>
+                            <a class="page-scroll" href="#aboutus" style = "font-size: 20px;">About Us</a>
                         </li>
                     </ul>
                 </div>	<!-- .navbar-collapse -->
@@ -58,7 +58,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>HDSI Faculty Allocation Tool</h1>
+                        <h1 style = "font-size: 50px;">HDSI Faculty Allocation Tool</h1>
                         <p> Welcome to our group's Data Science Capstone project! </p>
                     </div>
                 </div>
@@ -70,7 +70,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>About</h2>
+                        <h1>About</h1>
+                        <p>The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institute (HDSI)</a> at University of California, San Diego is dedicated to the discovery of new methods and training of students and faculty to use data science to solve problems in the current world. The HDSI has several industry partners that are often searching for assistance to tackle their daily activities and need experts in different domain areas. Currently, there are around 55 professors affiliated to HDSI. They all have diverse research interests and have written numerous papers in their own fields.</p>
+                        <br>
+                        <p>Our goal was to create a tool that allows HDSI to select the best fit from their faculty, based on their published work, to aid their industry partners in their specific endeavors. We did this with Natural Language Processing (NLP) by managing all the abstracts from the faculty’s published work and organizing them by topics. We will then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job</p>
                     </div>
                 </div>
             </div>
@@ -82,6 +85,16 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Data</h1>
+                        <p>In order to obtain abstracts from HDSI faculty's publications, we used <a href = 'https://datanexus.ucsd.edu/analytic-data/dimensions.html'> Dimensions'</a> API. This website contains publications and academic journal articles and with their API we were able to obtain HDSI faculty researcher profiles.</p>
+                        <br>
+                        <p>We then obtained all of the abstracts available from these authors. For additional information not found on Dimensions, we utilized Google Scholar profiles. We complemented the data with both of these sites.</p>
+                        <br>
+                        <p>In our dashboard, you are able to select a particular author and if their Google Scholar profile has labels for their Field or Concentration, these will be displayed as shown on the image below. This makes it easier for the user to be more familiar with the author's work. </p>
+                        <br>
+                        <h4>Abstracts as Data</h4>
+                        <p>We considered the use of abstracts as our main source of data since in scientific papers and publications, abstracts are a short summary of a completed research. After further exploration and topic modeling, we discovered that they are indeed representative of the author's general field.</p>
+                        <br>
+                        <p>It is important to mention that even though researchers might not use the exact words 'Machine Learning' on their abstract, our model detects words that are associated with the topic and the relationship between them and the field can be easily inferred. For added precision, we have added Related Field labels next to the words generated by the model.</p>
                     </div>
                 </div>
             </div>

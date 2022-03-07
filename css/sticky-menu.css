@@ -7,11 +7,11 @@ body {
     background-color: rgb(246,245,240);
     font-family: "Inconsolata-Bold";
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 html {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 @media(min-width:767px) {
     .navbar {
@@ -55,38 +55,33 @@ html {
     text-align: center;
 }
 .about-section {
-    height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
 }
 .data-section {
-    height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
 }
 .methodology-section {
-    height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
 }
 .results-section {
-    height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
 }
 .demo-section {
-    height: 100%;
-    padding-top: 150px;
+    /* height: 100%; */
+    padding-top: 50px;
     text-align: center;
 }
 .futurework-section {
-    height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
 }
 .aboutus-section {
-    height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
 }
 .navbar-default .navbar-nav > li > a:hover {
