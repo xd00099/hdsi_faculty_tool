@@ -63,19 +63,29 @@ Latent Dirichlet Allocation (LDA) was used for our topic modeling. The LDA model
 
 ![LDA](images/LDA.png)
 
-Behind the scene, the LDA model takes the corpus of texts with the id2word indexes and transform them into document topic density matrix and word topic density matrix by repetitive probabilistic sampling. The document topic density matrix contains the $D$ number of documents as rows, and $K$ number of topics as columns. Each row represents the particular probability distribution over the generated topics for that particular document/article. The word topic density matrix contains $V$ rows of unique words, and $K$ as the number of columns. Then, each row of the matrix represents a probability distribution of topics for a particular word. With the two matrices, we are able to generate a list of top terms for each topic ranked by the probability distribution. And also we could extract the dominant topics for each terms by the measures in the document topic density matrix. 
+Behind the scene, the LDA model takes the corpus of texts with the id2word indexes and transform them into document topic density matrix and word topic density matrix by repetitive probabilistic sampling. The document topic density matrix contains the **D** number of documents as rows, and **K** number of topics as columns. Each row represents the particular probability distribution over the generated topics for that particular document/article. The word topic density matrix contains **V** rows of unique words, and **K** as the number of columns. Then, each row of the matrix represents a probability distribution of topics for a particular word. With the two matrices, we are able to generate a list of top terms for each topic ranked by the probability distribution. And also we could extract the dominant topics for each terms by the measures in the document topic density matrix. 
 
 As a result, by running the LDA model, we will be able to obtain several matrices: the word-topic matrix which represents each word with its associated topic distribution, the document-topic matrix which represents each document with its corresponding probability score, the author-topic matrix which aggregates from the document-topic matrices by the authors and the author-year-topic matrix which is obtained by aggregate further from author-topic matrix by year.
 
-The difficulty lies in the choice of $K$, the number of generated topics. Because this is a unsupervised machine learning method, it requires human interpretation to account for the qualities of generated topics. We will be choosing the topics by running different $Ks$ individually and compare results together.
+The difficulty lies in the choice of **K**, the number of generated topics. Because this is a unsupervised machine learning method, it requires human interpretation to account for the qualities of generated topics. We will be choosing the topics by running different **Ks** individually and compare results together.
 
 ## Maintaining a Workflow
 <em> Here we will talk about how the code was changed in order to be upkept easily, and how addition or deletion of faculty will be easy and can be done once a year. We will also mention the reason of this (faculty publishes every year).  </em>
 
+As our tool aims to provide the information of faculty members at HDSI to facilitate the partnership with the industry, we hope that this tool can be always stay updated and robust to changes. Therefore, we designed a data pipeline that enables updates for our search tool:
 
+- Data ETL: This part is done through an API call to the Dimensions database to extract the latest faculty publication data.
+- Data Preprocess: This is the first part of data pipeline which cleans up the retrieved datasets and preprocess for the later modeling use.
+- LDA Modeling: The second part of the pipeline is dedicated to the modeling process. Here, developers can modify the configuration to adjust the topic models and explore the topic results.
+- Prepare Dashboard: Based on the selected models, the pipeline will run the appropriate models and generate the necessary files for the use of dashboard.
+- Launch Dashboard: Once all the data and files are ready, the dashboard is ready to be launched.
+
+This workflow can be traced in our Github repo, and our goal is to run through the pipeline once a year so that the latest information can be reflected on the dashboard.
 
 ## Easy Search Tool and Future Work
 <em> Here we will talk about the Front End Element of our project, and how it is easy to use for any audience, specially those who might not be familiar with the Sankedy 
+
+
 
  While our dashboard has many useful functions that can offer great use cases for our Industry partners, we also wanted to imagine how we could integrate a more UI focused easy search tool on the HDSI website. So we created a Figma demo demonstrating the features that we are further interested in exploring.
 </em>
