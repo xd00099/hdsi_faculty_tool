@@ -36,6 +36,9 @@ On the bar on the left, you are able to select the number of topics you wish to 
 
 On the Topic number bar, you are able to see the topic number along with its associated top words and the related field labels that we have added. 
 
+![first_bar](https://user-images.githubusercontent.com/59885990/156953542-c4f5845f-dae1-4130-ac6c-4174de2b8936.gif)
+
+
 You are also able to select a particular researcher and all of their published papers will appear along with the topic number they are related too.
 
 A word search can also be done and the related topics will show up as well.
