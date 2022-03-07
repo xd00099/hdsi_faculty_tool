@@ -41,6 +41,9 @@ On the Topic number bar, you are able to see the topic number along with its ass
 
 You are also able to select a particular researcher and all of their published papers will appear along with the topic number they are related too.
 
+![research_select](https://user-images.githubusercontent.com/59885990/156953967-e5428064-02eb-49b2-8f86-b0f9bc6873c8.gif)
+
+
 A word search can also be done and the related topics will show up as well.
 
 
