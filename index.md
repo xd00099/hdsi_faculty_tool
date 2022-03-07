@@ -8,8 +8,6 @@ Team Members: Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang
 
 
 
-
-
 ## Our Goal 
 
 The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institute (HDSI)</a> at University of California, San Diego is dedicated to the discovery of new methods and training of students and faculty to use data science to solve problems in the current world. The HDSI has several industry partners that are often searching for assistance to tackle their daily activities and need experts in different domain areas. Currently, there are around 55 professors affiliated to HDSI. They all have diverse research interests and have written numerous papers in their own fields. 
