@@ -1,5 +1,11 @@
+@font-face{
+    font-family: "Inconsolata-Bold";
+    src: url("fonts/Inconsolata/static/Inconsolata/Inconsolata-Bold.ttf");
+}
+
 body {
-    background-color: rgb(195,155,119);
+    background-color: rgb(246,245,240);
+    font-family: "Inconsolata-Bold";
     width: 100%;
     height: 100%;
 }
@@ -44,7 +50,7 @@ html {
     color: #FFF;
 }
 .title-section {
-    height: 100%;
+    height: 25%;
     padding-top: 150px;
     text-align: center;
 }
@@ -84,11 +90,11 @@ html {
     text-align: center;
 }
 .navbar-default .navbar-nav > li > a:hover {
-	color: #333;
-	background-color: #F0F0F0;
+	color: white;
+	background-color: rgb(240,228,215);
 }
 .navbar-default {
-    background-color: #EBFAFF;
+    background-color: rgb(240,228,215);
     border-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > li > a {

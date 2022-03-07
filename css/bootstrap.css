@@ -2395,7 +2395,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.info:hover > td,
 .table-hover > tbody > tr:hover > .info,
 .table-hover > tbody > tr.info:hover > th {
-  background-color: #c4e3f3;
+  background-color: rgb(240,228,215);;
 }
 .table > thead > tr > td.warning,
 .table > tbody > tr > td.warning,
