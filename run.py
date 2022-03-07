@@ -9,6 +9,7 @@ sys.path.insert(0, 'src/model')
 sys.path.insert(0, 'src/sankey_dash')
 
 #from etl import get_data
+from etl import get_data
 from preprocess import save_cleaned_corpus
 from lda import save_lda_model
 from prepare_dash import prepare_sankey
@@ -26,10 +27,7 @@ def main(targets):
     if 'etl' in targets:
         with open('config/etl-params.json') as fh:
             etl_cfg = json.load(fh)
-
-        # make the data target
-        data = get_data(**etl_cfg)
-
+        get_data(**etl_cfg)
 
     if 'process_data' in targets:
         with open('config/process-params.json') as fh:

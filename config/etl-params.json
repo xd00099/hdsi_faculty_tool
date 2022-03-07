@@ -1,5 +1,5 @@
 {
-    "faculty_data": "", 
-    "key": "", 
-    "outpath": ""
+    "faculty_data": "data/raw/HDSI Faculty Council.csv", 
+    "key": "17A38CA3A8C7407E8A865D546CCDF737", 
+    "outpath": "data/raw/hdsi_faculty.csv"
 }
