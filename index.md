@@ -82,10 +82,17 @@ The difficulty lies in the choice of **K**, the number of generated topics. Beca
 ## Topic Labelling
 We obtained labels from LDA model, Google Scholar and Dimensions to categorize articles and faculty
 
-- LDA: we used the labels from our trained LDA model to represent our topics. 
-- Google Scholar: we scraped the labels for each researcher from their Google Scholar pages. 
-- Dimensions API: we gathered labels from Dimensions API and combined them with the LDA labels to optimize our labels for topics. 
+- LDA: we used the labels from our trained LDA model to represent our topics. By ranking each word by their topic probabilities, we can get each topic's top relevant words.
 
+![topic-words](images/topic_words.png)
+
+- Google Scholar: we scraped the labels for each researcher from their Google Scholar pages. 
+
+![google-scholar-labels](images/google-scholar-labels.png)
+
+- Dimensions API: we gathered labels from Dimensions API and combined them with the LDA labels to optimize our labels for topics. (each topic gets the most frequent topic labels aggregated on the topic level)
+
+<img src="images/topic_labels.jpg" width="80%">
 
 ## Maintaining a Workflow
 
