@@ -17,6 +17,7 @@ The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institut
 Our goal was to create a tool that allows HDSI to select the best fit from their faculty, based on their published work, to aid their industry partners in their specific endeavors. We did this with Natural Language Processing (NLP) by managing all the abstracts from the faculty’s published work and organizing them by topics. We will then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job.
  
  
+ 
 ## Our Dashboard
 
 We have created a tool that allows for future users to explore faculty's work in a very easy and intuitive way. <a href="https://github.com/IreneLiu2018/capstone_a14/tree/master/New_Vis">Our Project GitHub Repo</a> gives detailed instructions on how to run the dashboard.
@@ -40,8 +41,6 @@ We then obtained all of the abstracts available from these authors. For addition
 In our dashboard, you are able to select a particular author and if their Google Scholar profile has labels for their Field or Concentration, these will be displayed as shown on the image below. This makes it easier for the user to be more familiar with the author's work. 
 
 <img width="707" alt="Google Scholar Labels on Dashboard" src="https://user-images.githubusercontent.com/59885990/156911881-2c0b967f-d0a0-4e33-987a-624a6ac0befc.png" class='center'>
-
-
 
 
 
@@ -72,7 +71,6 @@ The difficulty lies in the choice of **K**, the number of generated topics. Beca
 
 
 ## Maintaining a Workflow
-<em> Here we will talk about how the code was changed in order to be upkept easily, and how addition or deletion of faculty will be easy and can be done once a year. We will also mention the reason of this (faculty publishes every year).  </em>
 
 As our tool aims to provide the information of faculty members at HDSI to facilitate the partnership with the industry, we hope that this tool can be always stay updated and robust to changes. Therefore, we designed a data pipeline that enables updates for our search tool:
 
@@ -95,9 +93,6 @@ While our current dashboard has many useful functions that can offer great use c
 Thus our faculty exploration tool resembles a search bar like aesthetic that matches the current theme of the HDSI website with modern UI aspects and a navy and gold color scheme. The search bar tool will be helpful to explore the array of topics that each of our HDSI faculty members specializes in from microbiology to machine learning algorithms similar to the search by keyword function within our current dashboard. 
 
 However our concept further extends to how we want our information to be displayed. So by adding profile pictures that coincide with each faculty member’s name, area of research, and their most relevant publications, our goal is to create a more intuitive layout that provides a greater amount of information within a quick glance. In addition, we also imagined a profile style page that expands upon each faculty member’s publications, abstracts along with their article level topic, and contact information for easy access. 
-
-
-
 
 
 
