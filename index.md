@@ -76,8 +76,8 @@ The difficulty lies in the choice of **K**, the number of generated topics. Beca
 
 
 ## Topic Labelling
+We obtained labels from LDA model, Google Scholar and Dimensions to categorize articles and faculty
 
-<em> We obtained labels from LDA model, Google Scholar and Dimensions to categorize articles and faculty </em>
 - LDA: we used the labels from our trained LDA model to represent our topics. 
 - Google Scholar: we scraped the labels for each researcher from their Google Scholar pages. 
 - Dimensions API: we gathered labels from Dimensions API and combined them with the LDA labels to optimize our labels for topics. 
