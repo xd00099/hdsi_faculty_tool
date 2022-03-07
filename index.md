@@ -30,6 +30,8 @@ The topics were obtained using a  <a href="#Latent Dirichlet Allocation (LDA)"> 
 
 
 
+
+
 ## Data Collection
 
 In order to obtain abstracts from HDSI faculty's publications, we used <a href = 'https://datanexus.ucsd.edu/analytic-data/dimensions.html'> Dimensions'</a> API. This website contains publications and academic journal articles and with their API we were able to obtain HDSI faculty researcher profiles.
