@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HDSI Faculty Exploration Tool | hdsi_faculty_tool</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HDSI Faculty Exploration Tool" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Capstone Project - Section A14" />
+<meta property="og:description" content="Capstone Project - Section A14" />
+<link rel="canonical" href="https://marthay01.github.io/hdsi_faculty_tool/" />
+<meta property="og:url" content="https://marthay01.github.io/hdsi_faculty_tool/" />
+<meta property="og:site_name" content="hdsi_faculty_tool" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HDSI Faculty Exploration Tool" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Capstone Project - Section A14","headline":"HDSI Faculty Exploration Tool","name":"hdsi_faculty_tool","url":"https://marthay01.github.io/hdsi_faculty_tool/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/hdsi_faculty_tool/assets/css/style.css?v=4700b0bca15ca72d4d116458b051624e8f9a822b">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/hdsi_faculty_tool/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">HDSI Faculty Exploration Tool</h1>
+      <h2 class="project-tagline">Capstone Project - Section A14</h2>
+      
+        <a href="https://github.com/MarthaY01/hdsi_faculty_tool" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="hdsi-faculty-exploration-tool">HDSI Faculty Exploration Tool</h1>
+
+<p>Team Members: Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang</p>
+
+<p><a href="https://docs.google.com/document/d/1u6r-X8ZCbjC8UuSJau-DIbpBevjOWTVSEwI4qaLCmlI/edit?usp=sharing">See our Report</a></p>
+
+<p><a href="https://github.com/IreneLiu2018/capstone_a14/tree/master/New_Vis">Our Project GitHub Repo</a></p>
+
+<h2 id="our-goal">Our Goal</h2>
+
+<p>The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institute (HDSI)</a> at University of California, San Diego is dedicated to the discovery of new methods and training of students and faculty to use data science to solve problems in the current world. The HDSI has several industry partners that are often searching for assistance to tackle their daily activities and need experts in different domain areas. Currently, there are around 55 professors affiliated to HDSI. They all have diverse research interests and have written numerous papers in their own fields.</p>
+
+<p>Our goal was to create a tool that allows HDSI to select the best fit from their faculty, based on their published work, to aid their industry partners in their specific endeavors. We did this with Natural Language Processing (NLP) by managing all the abstracts from the faculty’s published work and organizing them by topics. We will then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job.</p>
+
+<h2 id="our-dashboard">Our Dashboard</h2>
+
+<p>We have created a tool that allows for future users to explore faculty’s work in a very easy and intuitive way. <a href="https://github.com/IreneLiu2018/capstone_a14/tree/master/New_Vis">Our Project GitHub Repo</a> gives detailed instructions on how to run the dashboard.</p>
+
+<p>Once you are able to get the address for the dashboard and copy and paste it on your browser, you should see something like the following:</p>
+
+<p><img width="1435" alt="Preview of Dashboard" src="image.png" /></p>
+
+<p>This dashboard includes a Sankey Diagram, a number of topics selection bars, and 3 different search bars on the right for topic number and topic words, researcher and keywords.</p>
+
+<p>The topics were obtained using a  <a href="#Latent Dirichlet Allocation (LDA)"> Latent Dirichlet Allocation (LDA) </a> topic model.</p>
+
+<h2 id="data-collection">Data Collection</h2>
+
+<p>In order to obtain abstracts from HDSI faculty’s publications, we used <a href="https://datanexus.ucsd.edu/analytic-data/dimensions.html"> Dimensions’</a> API. This website contains publications and academic journal articles and with their API we were able to obtain HDSI faculty researcher profiles.</p>
+
+<p>We then obtained all of the abstracts available from these authors. For additional information not found on Dimensions, we utilized Google Scholar profiles. We complemented the data with both of these sites.</p>
+
+<p>In our dashboard, you are able to select a particular author and if their Google Scholar profile has labels for their Field or Concentration, these will be displayed as shown on the image below. This makes it easier for the user to be more familiar with the author’s work.</p>
+
+<p><img width="707" alt="Google Scholar Labels on Dashboard" src="https://user-images.githubusercontent.com/59885990/156911881-2c0b967f-d0a0-4e33-987a-624a6ac0befc.png" class="center" /></p>
+
+<h2 id="abstracts-as-data">Abstracts as Data</h2>
+<p>We considered the use of abstracts as our main source of data since in scientific papers and publications, abstracts are a short summary of a completed research. After further exploration and topic modeling, we discovered that they are indeed representative of the author’s general field.</p>
+
+<p>It is important to mention that even though researchers might not use the exact words ‘Machine Learning’ on their abstract, our model detects words that are associated with the topic and the relationship between them and the field can be easily inferred. For added precision, we have added Related Field labels next to the words generated by the model.</p>
+
+<h2 id="latent-dirichlet-allocation-lda"><a id="Latent Dirichlet Allocation (LDA)">Latent Dirichlet Allocation (LDA)</a></h2>
+<p><em> Topic modeling provides methods for automatically organizing, understanding, searching, and summarizing large text corpora.</em></p>
+
+<h2 id="topic-labelling">Topic Labelling</h2>
+<p><em> Here we will discuss how in order to improve our product, we obtained labels from Google Scholar and Dimensions to categorize articles and faculty, but how we still kept the topic words in order to be more exact with the topic distinction </em></p>
+
+<p>Latent Dirichlet Allocation (LDA) was used for our topic modeling. The LDA model can be represented by a graphical probabilistic model with three levels as shown in the following figure. The inner level represents the word level: <strong>w</strong> denotes a specific word in a particular document, while <strong>z</strong> denotes the specific topic sampled for that particular word. At the document level, <strong>Θ</strong> represents the topic distribution for a particular document. At the outer corpus level, <strong>α</strong> and <strong>β</strong> represents the document topic density and the word topic density, respectively.  LDA uses a generative probabilistic approach to model each topic as a mixture of a set of words and each document as a mixture of a set of topics.</p>
+
+<p><img src="/hdsi_faculty_tool/images/LDA.png" alt="LDA" /></p>
+
+<p>Behind the scene, the LDA model takes the corpus of texts with the id2word indexes and transform them into document topic density matrix and word topic density matrix by repetitive probabilistic sampling. The document topic density matrix contains the <strong>D</strong> number of documents as rows, and <strong>K</strong> number of topics as columns. Each row represents the particular probability distribution over the generated topics for that particular document/article. The word topic density matrix contains <strong>V</strong> rows of unique words, and <strong>K</strong> as the number of columns. Then, each row of the matrix represents a probability distribution of topics for a particular word. With the two matrices, we are able to generate a list of top terms for each topic ranked by the probability distribution. And also we could extract the dominant topics for each terms by the measures in the document topic density matrix.</p>
+
+<p>As a result, by running the LDA model, we will be able to obtain several matrices: the word-topic matrix which represents each word with its associated topic distribution, the document-topic matrix which represents each document with its corresponding probability score, the author-topic matrix which aggregates from the document-topic matrices by the authors and the author-year-topic matrix which is obtained by aggregate further from author-topic matrix by year.</p>
+
+<p>The difficulty lies in the choice of <strong>K</strong>, the number of generated topics. Because this is a unsupervised machine learning method, it requires human interpretation to account for the qualities of generated topics. We will be choosing the topics by running different <strong>Ks</strong> individually and compare results together.</p>
+
+<h2 id="maintaining-a-workflow">Maintaining a Workflow</h2>
+<p><em> Here we will talk about how the code was changed in order to be upkept easily, and how addition or deletion of faculty will be easy and can be done once a year. We will also mention the reason of this (faculty publishes every year).  </em></p>
+
+<p>As our tool aims to provide the information of faculty members at HDSI to facilitate the partnership with the industry, we hope that this tool can be always stay updated and robust to changes. Therefore, we designed a data pipeline that enables updates for our search tool:</p>
+
+<ul>
+  <li>Data ETL: This part is done through an API call to the Dimensions database to extract the latest faculty publication data.</li>
+  <li>Data Preprocess: This is the first part of data pipeline which cleans up the retrieved datasets and preprocess for the later modeling use.</li>
+  <li>LDA Modeling: The second part of the pipeline is dedicated to the modeling process. Here, developers can modify the configuration to adjust the topic models and explore the topic results.</li>
+  <li>Prepare Dashboard: Based on the selected models, the pipeline will run the appropriate models and generate the necessary files for the use of dashboard.</li>
+  <li>Launch Dashboard: Once all the data and files are ready, the dashboard is ready to be launched.</li>
+</ul>
+
+<p>This workflow can be traced in our Github repo, and our goal is to run through the pipeline once a year so that the latest information can be reflected on the dashboard.</p>
+
+<h2 id="easy-search-tool-and-future-work">Easy Search Tool and Future Work</h2>
+<p><em> Here we will talk about the Front End Element of our project, and how it is easy to use for any audience, specially those who might not be familiar with the Sankedy</em></p>
+
+<p>While our dashboard has many useful functions that can offer great use cases for our Industry partners, we also wanted to imagine how we could integrate a more UI focused easy search tool on the HDSI website. So we created a Figma demo demonstrating the features that we are further interested in exploring.
+&lt;/em&gt;</p>
+
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/MarthaY01/hdsi_faculty_tool">hdsi_faculty_tool</a> is maintained by <a href="https://github.com/MarthaY01">MarthaY01</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
