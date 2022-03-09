@@ -41,7 +41,7 @@ def run_dash_board(sankey_path):
             html.H1(children="HDSI Faculty Exploration Tool", className="header-title",
                 style={
                   'color' :'#666699',
-                  'margin': '4px auto',
+                  #'margin': '4px auto',
                   'text-align': 'center',
                   'padding-top': '20px'  
                 }),
@@ -55,7 +55,7 @@ def run_dash_board(sankey_path):
                 className="header-description",
                 style={
                   'color' :'#666699',
-                  'margin': '4px auto',
+                  #'margin': '4px auto',
                   'padding-bottom': '20px',  
                   'text-align': 'center'   
                 },
