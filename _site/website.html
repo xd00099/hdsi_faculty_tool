@@ -138,13 +138,13 @@
                         <p>The difficulty lies in deciding the <em style = "color: #E47A0A">K</em> variable, which in our case is the number of generated topics. Since this is a unsupervised machine learning method, human interpretation is required to account for the qualities of generated topics with different <em style = "color: #E47A0A">K's</em>. This is why in our final dashboard we decided to include a toggle bar that accounts for different numbers of topics ranging from <em style = "color: #E47A0A">K</em> = 10, 20, 30, 40, and 50. With this option, future users can interpret the results themselves based on how granular they want the topics to be.</p>
                         <br>
                         <h4>Topic Labelling</h4>
-                        <p>Overall, we obtained labels from the LDA model, Google Scholar, and Dimensions to categorize articles and faculty.</p>
+                        <p>Overall, we obtained labels from the LDA model, Google Scholar, and Dimensions to categorize articles and faculty. Below is a short explanation on how we gathered all the labels from these different areas.</p>
                         <br>
-                        <p>- LDA: we used the labels from our trained LDA model to represent our topics. By ranking each word by their topic probabilities, we can get each topic's top relevant words.</p>
+                        <p> <u>LDA</u>: we used the labels from our trained LDA model to represent our topics. By ranking each word by their topic probabilities, we can get each topic's top relevant words.</p>
                         <br>
-                        <p>- Google Scholar: we scraped the labels for each researcher from their Google Scholar pages.</p>
+                        <p> <u>Dimensions API</u>: we gathered labels from Dimensions API and combined them with the LDA labels to optimize our labels for topics. So each topic gets the most frequent topic labels aggregated on the topic level.</p>
                         <br>
-                        <p>- Dimensions API: we gathered labels from Dimensions API and combined them with the LDA labels to optimize our labels for topics. (each topic gets the most frequent topic labels aggregated on the topic level)</p>
+                        <p> <u>Google Scholar</u>: we scraped the labels for each researcher from their Google Scholar pages.</p>
                         <br>
                         <h4>Maintaining a Workflow</h4>
                         <p>As our tool aims to provide the information of faculty members at HDSI to facilitate the partnership with the industry, we hope that this tool can be always stay updated and robust to changes. Therefore, we designed a data pipeline that enables updates for our search tool:</p>
