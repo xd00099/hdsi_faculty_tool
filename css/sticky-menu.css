@@ -84,9 +84,6 @@ html {
     padding-bottom: 50px;
     text-align: center;
 }
-.LDA-section {
-    text-align: center;
-}
 .navbar-default .navbar-nav > li > a:hover {
 	color: white;
 	background-color: rgb(240,228,215);
@@ -107,6 +104,5 @@ h4 {
     font-size: 22px;
     color: #990F02; 
 }
-
 
 
