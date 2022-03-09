@@ -4,7 +4,7 @@ Team Members: Sijie Liu, Siddhi Patel, Brian Qian, Du Xiang
 
 <a href="https://docs.google.com/document/d/1u6r-X8ZCbjC8UuSJau-DIbpBevjOWTVSEwI4qaLCmlI/edit?usp=sharing">See our Report</a>
 
-<a href="https://github.com/IreneLiu2018/capstone_a14/tree/master/New_Vis">Our Project GitHub Repo</a>
+<a href="https://github.com/MarthaY01/hdsi_faculty_tool">Our Project GitHub Repo</a>
 
 
 
