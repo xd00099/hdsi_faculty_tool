@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>HDSI Faculty Allocation Tool</title>
+        <title>HDSI Faculty Exploration Tool</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/sticky-menu.css" rel="stylesheet">
     </head>
@@ -58,12 +58,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 style = "font-size: 50px;">HDSI Faculty Allocation Tool</h1>
-                        <p> Welcome to our group's Data Science Capstone project! </p>
-                        <a class="btn btn-primary page-scroll" href="https://docs.google.com/document/d/1u6r-X8ZCbjC8UuSJau-DIbpBevjOWTVSEwI4qaLCmlI/edit?usp=sharing">View our Report</a> <a class="btn btn-primary page-scroll" href="https://github.com/MarthaY01/hdsi_faculty_tool">Project Github</a>
+                        <h1 style = "font-size: 60px; text-decoration: underline; text-decoration-thickness: 3px; padding-bottom: 25px;">HDSI Faculty Exploration Tool</h1>
+                        <p style = "font-size: 25px; color: #3F3F4E; padding-bottom: 25px;"> Developing an easy to use faculty search tool for the Halıcıoğlu Data Science Institute and its partnering companies. </p>
+                        <a class="btn btn-primary page-scroll" style = "font-size: 18px;" href="https://docs.google.com/document/d/1u6r-X8ZCbjC8UuSJau-DIbpBevjOWTVSEwI4qaLCmlI/edit?usp=sharing">View our Report</a> <a style = "font-size: 18px;" class="btn btn-primary page-scroll" href="https://github.com/MarthaY01/hdsi_faculty_tool">Project Github</a>
                     </div>
                 </div>
-            </dßßßiv>
+            </div>
         </section>
 
         <!-- About -->
@@ -72,9 +72,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>About</h1>
-                        <p>The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institute (HDSI)</a> at University of California, San Diego is dedicated to the discovery of new methods and training of students and faculty to use data science to solve problems in the current world. The HDSI has several industry partners that are often searching for assistance to tackle their daily activities and need experts in different domain areas. Currently, there are around 55 professors affiliated to HDSI. They all have diverse research interests and have written numerous papers in their own fields.</p>
+                        <p>The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institute (HDSI)</a> at University of California, San Diego is dedicated to the discovery of new methods and training of students and faculty to use data science to solve problems in the current world. The HDSI has several industry partners that are often searching for assistance to tackle their daily activities and need experts in different domain areas. Currently, there are around 55 professors affiliated with HDSI. They all have diverse research interests and have written numerous papers in their own fields.</p>
                         <br>
-                        <p>Our goal was to create a tool that allows HDSI to select the best fit from their faculty, based on their published work, to aid their industry partners in their specific endeavors. We did this with Natural Language Processing (NLP) by managing all the abstracts from the faculty’s published work and organizing them by topics. We will then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job</p>
+                        <p>Our goal was to create a data-centric tool that allows HDSI to select the best fit faculty member—based on their published work—to aid their industry partners in their specific endeavors. We craeted this tool using unsupervised Natural Language Processing (NLP) methods that entailed of managing all the abstracts from the faculty’s published work and organizing them by topics. We then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This way, we were able develop a candidate list of professors who specialize in certain topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job. Below, we will give an in depth explanation on the data behind the dashboard as well as our NLP methods that helped us create our product.</p>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Data</h1>
-                        <p>In order to obtain abstracts from HDSI faculty's publications, we used <a href = 'https://datanexus.ucsd.edu/analytic-data/dimensions.html'> Dimensions'</a> API. This website contains publications and academic journal articles and with their API we were able to obtain HDSI faculty researcher profiles.</p>
+                        <p>Our first step in the data collection process was to retrieve all the abstract sections from every paper published by HDSI faculty. In order to obtain the abstracts from HDSI faculty's publications, we used <a href = 'https://datanexus.ucsd.edu/analytic-data/dimensions.html'> Dimensions'</a> API. Dimensions contains information on millions of research publications and academic journal articles. With their API we were able to obtain HDSI faculty researcher profiles.</p>
                         <br>
                         <p>We then obtained all of the abstracts available from these authors. For additional information not found on Dimensions, we utilized Google Scholar profiles. We complemented the data with both of these sites.</p>
                         <br>
@@ -204,7 +204,7 @@
                     <div class="col-lg-12">
                         <h1>About Us</h1>
                         <br>
-                        <a class="btn btn-primary page-scroll" href="">Brian Qian</a> <a class="btn btn-primary page-scroll" href="">Du Xiang</a> <a class="btn btn-primary page-scroll" href="">Martha Yanez</a> <a class="btn btn-primary page-scroll" href="https://www.linkedin.com/in/siddhipatel-stu/">Siddhi Patel</a> <a class="btn btn-primary page-scroll" href="">Sijie (Irene) Lu</a>
+                        <a class="btn btn-primary page-scroll" href="https://github.com/brianrqian">Brian Qian</a> <a class="btn btn-primary page-scroll" href="https://www.linkedin.com/in/du-xiang-a92788194">Du Xiang</a> <a class="btn btn-primary page-scroll" href="www.linkedin.com/in/martha-yanez">Martha Yanez</a> <a class="btn btn-primary page-scroll" href="https://www.linkedin.com/in/siddhipatel-stu/">Siddhi Patel</a> <a class="btn btn-primary page-scroll" href="https://www.linkedin.com/in/sijie-liu-ucsd/">Sijie (Irene) Lu</a>
                     </div>
                 </div>
             </div>
