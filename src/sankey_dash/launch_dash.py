@@ -39,11 +39,12 @@ def run_dash_board(sankey_path):
     dbc.Row([
         html.Div([
             html.H1(children="HDSI Faculty Exploration Tool", className="header-title",
-                style={
+                style = {
                   'color' :'#666699',
                   #'margin': '4px auto',
                   'text-align': 'center',
-                  'padding-top': '20px'  
+                  'padding-top': '20px' ,
+                  'display': 'block'
                 }),
 
             html.P(
@@ -53,16 +54,16 @@ def run_dash_board(sankey_path):
             " HDSI's faculty powered by Topic Modeling",
 
                 className="header-description",
-                style={
+                style = {
                   'color' :'#666699',
                   #'margin': '4px auto',
                   'padding-bottom': '20px',  
-                  'text-align': 'center'   
+                  'text-align': 'center' ,
+                  'display': 'block'
                 },
-
             ),
         ]),
-    ]),
+    ], style= {"align-items": "center", 'display': 'block'})
     
     dbc.Row([
       dbc.Col(html.Div([
