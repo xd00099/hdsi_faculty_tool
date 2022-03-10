@@ -63,7 +63,7 @@ def run_dash_board(sankey_path):
                 },
             ),
         ]),
-    ], style= {"align-items": "center", 'display': 'block'})
+    ], style= {"align-items": "center", 'display': 'block'}),
     
     dbc.Row([
       dbc.Col(html.Div([
