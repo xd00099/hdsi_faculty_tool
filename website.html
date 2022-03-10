@@ -74,7 +74,7 @@
                         <h1>About</h1>
                         <p>The <a href="https://datascience.ucsd.edu/">Halıcıoğlu Data Science Institute (HDSI)</a> at University of California, San Diego is dedicated to the discovery of new methods and training of students and faculty to use data science to solve problems in the current world. The HDSI has several industry partners that are often searching for assistance to tackle their daily activities and need experts in different domain areas. Currently, there are around 55 professors affiliated with HDSI. They all have diverse research interests and have written numerous papers in their own fields.</p>
                         <br>
-                        <p>Our goal was to create a data-centric tool that allows HDSI to select the best fit faculty member—based on their published work—to aid their industry partners in their specific endeavors. We craeted this tool using unsupervised Natural Language Processing (NLP) methods that entailed of managing all the abstracts from the faculty’s published work and organizing them by topics. We then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This way, we were able develop a candidate list of professors who specialize in certain topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job. Below, we will give an in depth explanation on the data behind the dashboard as well as our NLP methods that helped us create our product.</p>
+                        <p>Our goal was to create a data-centric tool that allows HDSI to select the best fit faculty member—based on their published work—to aid their industry partners in their specific endeavors. We created this tool using unsupervised Natural Language Processing (NLP) methods that entailed of managing all the abstracts from the faculty’s published work and organizing them by topics. We then obtained the proportion of papers of each faculty associated with each of the topics and drew a relationship between researchers and their most published topics. This way, we were able develop a candidate list of professors who specialize in certain topics. This will allow HDSI to personalize recommendations of faculty candidates to their industry partner’s particular job. Below, we will give an in depth explanation on the data behind the dashboard as well as our NLP methods that helped us create our product.</p>
                     </div>
                 </div>
             </div>
@@ -135,7 +135,7 @@
                             (4) author-year-topic matrix: obtained by further aggregating the author-topic matrix by year
                         </ul>
                         <br>
-                        <p>The difficulty lies in deciding the <em style = "color: #E47A0A">K</em> variable, which in our case is the number of generated topics. Since this is a unsupervised machine learning method, human interpretation is required to account for the qualities of generated topics with different <em style = "color: #E47A0A">K's</em>. This is why in our final dashboard we decided to include a toggle bar that accounts for different numbers of topics ranging from <em style = "color: #E47A0A">K</em> = 10, 20, 30, 40, and 50. With this option, future users can interpret the results themselves based on how granular they want the topics to be.</p>
+                        <p>The difficulty lies in deciding the <em style = "color: #E47A0A">K</em> variable, which in our case is the number of generated topics. Since this is a unsupervised machine learning method, human interpretation is required to account for the qualities of generated topics with different <em style = "color: #E47A0A">K's</em>. This is why in our final dashboard we decided to include a toggle bar that accounts for different numbers of topics ranging from <em style = "color: #E47A0A">K</em> = 5, 10, 15, 20, and 30. With this option, future users can interpret the results themselves based on how granular they want the topics to be.</p>
                         <br>
                         <h4>Topic Labeling</h4>
                         <p>Overall, we obtained labels from the LDA model, Dimensions, and Google Scholar to categorize articles and faculty. Below is a short explanation on how we gathered all the labels from these different areas.</p>
@@ -247,7 +247,7 @@
                 </div>
             </div>
         </section>
-        
+
         <a id="back2Top" title="Back to top" href="#">&#10148;</a>
         
         <!-- jQuery -->
