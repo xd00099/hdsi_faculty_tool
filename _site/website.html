@@ -137,7 +137,7 @@
                         <br>
                         <p>The difficulty lies in deciding the <em style = "color: #E47A0A">K</em> variable, which in our case is the number of generated topics. Since this is a unsupervised machine learning method, human interpretation is required to account for the qualities of generated topics with different <em style = "color: #E47A0A">K's</em>. This is why in our final dashboard we decided to include a toggle bar that accounts for different numbers of topics ranging from <em style = "color: #E47A0A">K</em> = 10, 20, 30, 40, and 50. With this option, future users can interpret the results themselves based on how granular they want the topics to be.</p>
                         <br>
-                        <h4>Topic Labelling</h4>
+                        <h4>Topic Labeling</h4>
                         <p>Overall, we obtained labels from the LDA model, Dimensions, and Google Scholar to categorize articles and faculty. Below is a short explanation on how we gathered all the labels from these different areas.</p>
                         <br>
                         <p> <u>LDA</u>: we used the labels from our trained LDA model to represent our topics. By ranking each word by their topic probabilities, we can get each topic's top relevant words.</p>
@@ -147,14 +147,17 @@
                         <p> <u>Google Scholar</u>: we scraped the labels for each researcher from their Google Scholar pages.</p>
                         <br>
                         <h4>Maintaining a Workflow</h4>
-                        <p>As our tool aims to provide the information of faculty members at HDSI to facilitate the partnership with the industry, we hope that this tool can be always stay updated and robust to changes. Therefore, we designed a data pipeline that enables updates for our search tool:</p>
+                        <p>Since our tool aims to provide the information of faculty members at HDSI to industry partners, we want this tool to always stay updated and robust to changes. Therefore, we designed the following data pipeline that enables updates for our search tool:</p>
+                        <br>
                         <ul style = "font-size: 16px; color: #3F3F4E;">
-                            <li>Data ETL: This part is done through an API call to the Dimensions database to extract the latest faculty publication data.</li>
-                            <li>Data Preprocess: This is the first part of data pipeline which cleans up the retrieved datasets and preprocess for the later modeling use.</li>
-                            <li>LDA Modeling: The second part of the pipeline is dedicated to the modeling process. Here, developers can modify the configuration to adjust the topic models and explore the topic results.</li>
-                            <li>Prepare Dashboard: Based on the selected models, the pipeline will run the appropriate models and generate the necessary files for the use of dashboard.</li>
-                            <li>Launch Dashboard: Once all the data and files are ready, the dashboard is ready to be launched.</li>
+                            <li><u>Data ETL</u>: This part is done through an API call to the Dimensions database to extract the latest faculty publication data.</li>
+                            <li><u>Data Preprocess</u>: This is the first part of the data pipeline which cleans up the retrieved datasets and preprocesses them for the later modeling use.</li>
+                            <li><u>LDA Modeling</u>: The second part of the pipeline is dedicated to the modeling process. Here, developers can modify the configuration to adjust the topic models and explore the topic results.</li>
+                            <li><u>Prepare Dashboard</u>: Based on the selected models, the pipeline will run the appropriate models and generate the necessary files for the use of dashboard.</li>
+                            <li><u>Launch Dashboard</u>: Once all the data and files are ready, the dashboard is ready to be launched.</li>
                         </ul>
+                        <br>
+                        <p>To look more closely at the data pipeline, please consult our project Github.</p>
                     </div>
                 </div>
             </div>
@@ -166,22 +169,31 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Results</h1>
+                        <p>In the end we created a tool that allows for future users to explore faculty's work in a very easy and intuitive way. <a href="https://github.com/IreneLiu2018/capstone_a14/tree/master/New_Vis">Our Project GitHub Repo</a> gives detailed instructions on how to run the dashboard. We encourage you to go clone the repository and run the dashboard using the command "run_dashboard" in your terminal.</p>
                         <br>
-                        <p>We have created a tool that allows for future users to explore faculty's work in a very easy and intuitive way. <a href="https://github.com/IreneLiu2018/capstone_a14/tree/master/New_Vis">Our Project GitHub Repo</a> gives detailed instructions on how to run the dashboard.</p>
+                        <p>INSERT SCREENSHOTS OF TERMINAL COMMANDS</p>
                         <br>
-                        <p>Once you are able to get the address for the dashboard and copy and paste it on your browser, you should see something like the following:</p>
+                        <p>Once you're able to get the address for the dashboard and copy and paste it on your browser, you should see something like the following:</p>
                         <br>
-                        <p>This dashboard includes a Sankey Diagram, a number of topics selection bars, and 3 different search bars on the right for topic number and topic words, researcher and keywords.</p>
+                        <p>INSERT DASHBOARD SCREENSHOT</p>
                         <br>
-                        <p>The topics were obtained using a  <a class="page-scroll" href="#LDA"> Latent Dirichlet Allocation (LDA) </a> topic model. </p>
+                        <p>This dashboard includes a Sankey Diagram, a number of topics selection bar on the left, and 3 different search bars on the right for topic number and topic words, researcher and keywords.</p>
                         <br>
-                        <p>On the bar on the left, you are able to select the number of topics you wish to see and that were generated by LDA.</p>
+                        <p>On the bar on the left, you are able to select the number of topics you wish to see displayed on the Sankey diagram. A demonstration can be seen below.</p>
                         <br>
-                        <p>On the Topic number bar, you are able to see the topic number along with its associated top words and the related field labels that we have added.</p>
+                        <p>INSERT GIF</p>
                         <br>
-                        <p>You are also able to select a particular researcher and all of their published papers will appear along with the topic number they are related too.</p>
+                        <p>On the "Select a topic" bar, you are able to see the topic number along with its associated top words and the related field labels that we have added.</p>
                         <br>
-                        <p>A word search can also be done and the related topics will show up as well.</p>
+                        <p>INSERT GIF</p>
+                        <br>
+                        <p>You are also able to select a particular faculty member and all of their published papers will appear along with the topic number they are related too.</p>
+                        <br>
+                        <p>INSERT GIF</p>
+                        <br>
+                        <p>Likewise, a keyword search can also be done and the related topics will be presented in similarity order.</p>
+                        <br>
+                        <p>INSERT GIF HERE</p>
                     </div>
                 </div>
             </div>
@@ -208,11 +220,15 @@
                     <div class="col-lg-12">
                         <h1>Future Work</h1>
                         <br>
-                        <p>While our current dashboard has many useful functions that can offer great use cases for our Industry partners, we also wanted to imagine how we could integrate a more UI focused easy search tool on the HDSI website. So we created a <a href="https://www.figma.com/proto/WO5QJnJrALVwI2xu1NfgAg/Main?node-id=28%3A2&starting-point-node-id=28%3A2">Figma demo</a> demonstrating the features that we are further interested in exploring and testing for a broader target audience including those who many not be familiar with more advanced data visualizations like the sankey diagram.</p>
+                        <p>While our current dashboard has many useful functions that can offer great use cases for our Industry partners, we also wanted to imagine how we could integrate a more UI focused easy search tool on the HDSI website. So we created a <a href="https://www.figma.com/proto/WO5QJnJrALVwI2xu1NfgAg/Main?node-id=28%3A2&starting-point-node-id=28%3A2">Figma demo</a> demonstrating the features that we are further interested in exploring and testing for a broader target audience, including those who many not be familiar with more advanced data visualizations like the sankey diagram.</p>
                         <br>
-                        <p>Thus our faculty exploration tool resembles a search bar like aesthetic that matches the current theme of the HDSI website with modern UI aspects and a navy and gold color scheme. The search bar tool will be helpful to explore the array of topics that each of our HDSI faculty members specializes in from microbiology to machine learning algorithms similar to the search by keyword function within our current dashboard.</p>
+                        <p>Thus our faculty exploration tool resembles a "search bar" aesthetic that matches the current theme of the HDSI website with modern UI aspects and a navy and gold color scheme. The search bar tool will be helpful to explore the array of topics that each of our HDSI faculty members specializes in from microbiology to machine learning algorithms similar to the search by keyword function within our current dashboard.</p>
                         <br>
-                        <p>However our concept further extends to how we want our information to be displayed. So by adding profile pictures that coincide with each faculty member’s name, area of research, and their most relevant publications, our goal is to create a more intuitive layout that provides a greater amount of information within a quick glance. In addition, we also imagined a profile style page that expands upon each faculty member’s publications, abstracts, along with their article level topic, and contact information for easy access to the user. While this is still a work in progress, our next steps would be to further build upon the early stages of implementation using Html and RxJs with a future goal of integrating our faculty exploration tool on the HDSI website itself which would allow a wider audience to find suitable faculty members depending on what their specific needs are.</p>
+                        <p>Our concept further extends to how we want our information to be displayed. So by adding profile pictures that coincide with each faculty member’s name, area of research, and their most relevant publications, our goal is to create a more intuitive layout that provides a greater amount of information within a quick glance. In addition, we also imagined a profile style page that expands upon each faculty member’s publications, abstracts, along with their article level topic, and contact information for easy access to the user. While this is still a work in progress, our next steps would be to further build upon the early stages of implementation using HTML and RxJs with a future goal of integrating our faculty exploration tool on the HDSI website itself which would allow a wider audience to find suitable faculty members depending on what their specific needs are.</p>
+                        <br>
+                        <p>Check out the demo of our Easy Search Tool UI below!</p>
+                        <br>
+                        <p>INSERT DEMO VIDEO HERE</p>
                     </div>
                 </div>
             </div>
