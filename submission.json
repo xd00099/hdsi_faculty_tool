@@ -1,4 +1,4 @@
 {
-    "dockerhub-id": "srpatelstu/hdsi_faculty_topic_allocation:latest",
+    "dockerhub-id": "duxiang/dsc180a:latest",
     "build-script": "python run.py run_dashboard"
 }
