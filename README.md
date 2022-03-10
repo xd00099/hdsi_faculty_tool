@@ -3,6 +3,10 @@
 This repository contains project code for experimenting with LDA for Faculty Information Retrieval System.
 
 ## Running the Project
+* All of the below lines should be run within a terminal:
+
+* Before running any of the below commands, launch the docker image by running `launch.sh -i duxiang/dsc180a:latest`
+
 * To get the preprocessed data file, run `python run.py process_data`
 * To get the fitted sklearn.lda model, run `python run.py model`
 * To prepare/update the dashboard, run `python run.py prepare_sankey`
