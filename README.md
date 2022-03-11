@@ -17,4 +17,4 @@ This repository contains project code for experimenting with LDA for Faculty Inf
 * It would require port-forwarding on a remote server.
 
 # Web Link
-Website: https://marthay01.github.io/hdsi_faculty_tool/
+Website: https://xd00099.github.io/hdsi_faculty_tool/
