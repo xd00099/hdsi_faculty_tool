@@ -1,6 +1,7 @@
 # HDSI Faculty Exploration Tool
 
 This repository contains project code for experimenting with LDA for Faculty Information Retrieval System.
+This tool is now deployed @ https://hdsi-faulty-tool.herokuapp.com/
 
 ## Running the Project
 * All of the below lines should be run within a terminal:
