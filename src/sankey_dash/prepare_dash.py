@@ -131,7 +131,8 @@ def prepare_sankey(data_processed_path, data_raw_path, missing_author_years_path
     link_labels = {}
     for num_topics in num_topics_list:
         link_labels[num_topics] = labels[num_topics].copy()
-        link_labels[num_topics][num_authors:] = ['Topic key words: '+a+'<br> Categories: '+b for a,b in zip(display_topics_list(models[str(num_topics)], names, 10), topic_labels[num_topics])]
+        # link_labels[num_topics][num_authors:] = ['Topic key words: '+a+'<br> Categories: '+b for a,b in zip(display_topics_list(models[str(num_topics)], names, 10), topic_labels[num_topics])]
+        link_labels[num_topics][num_authors:] = ['Categories: '+b for a,b in zip(display_topics_list(models[str(num_topics)], names, 10), topic_labels[num_topics])]
 
     
     counts = CountVectorizer().fit_transform(data['abstract_processed'])
@@ -206,11 +207,21 @@ def prepare_sankey(data_processed_path, data_raw_path, missing_author_years_path
 
     ### Add topic labels to the top_words
 
+    # top_words = dict(zip
+    #     (num_topics_list, 
+    #         [
+    #             [
+    #                 a+' ------Categories: '+b for a,b in zip(display_topics_list(models[str(i)], names, 10), topic_labels[i])
+    #             ] for i in num_topics_list
+    #         ]
+    #     )
+    # )
+
     top_words = dict(zip
         (num_topics_list, 
             [
                 [
-                    a+' ------Categories: '+b for a,b in zip(display_topics_list(models[str(i)], names, 10), topic_labels[i])
+                    b + ' <-----> ' + a for a,b in zip(display_topics_list(models[str(i)], names, 10), topic_labels[i])
                 ] for i in num_topics_list
             ]
         )
