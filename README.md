@@ -2,7 +2,10 @@
 
 This repository contains project code for experimenting with LDA for Faculty Information Retrieval System.
 
-This tool is now deployed @ https://hdsi-faulty-tool.herokuapp.com/
+## Project Links
+* Website: https://xd00099.github.io/hdsi_faculty_tool/
+* This tool is now deployed @ https://hdsi-faulty-tool.herokuapp.com/
+
 
 ## Running the Project
 * All of the below lines should be run within a terminal:
@@ -17,6 +20,3 @@ This tool is now deployed @ https://hdsi-faulty-tool.herokuapp.com/
 ## Using the Dashboard
 * When executing `run_dashboard`, it will launch dash with a locally hosted port.
 * It would require port-forwarding on a remote server.
-
-# Web Link
-Website: https://xd00099.github.io/hdsi_faculty_tool/
