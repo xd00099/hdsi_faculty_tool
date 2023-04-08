@@ -4,7 +4,7 @@ This repository contains project code for experimenting with LDA for Faculty Inf
 
 ## Project Links
 * Website: https://xd00099.github.io/hdsi_faculty_tool/
-* This tool is now deployed @ https://hdsi-faulty-tool.herokuapp.com/
+* This tool is actively deployed via Heroku @ https://hdsi-faulty-tool.herokuapp.com/
 
 
 ## Running the Project
